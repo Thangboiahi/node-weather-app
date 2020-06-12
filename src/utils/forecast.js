@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback) => {
     } else if (body.error) {
       callback(body.error.info, undefined);
     } else {
-      callback(undefined, `The temperature is ${body.current.temperature} and it feels like ${body.current.feelslike}`);
+      callback(undefined, `${body.current.weather_descriptions} - The temperature is ${body.current.temperature} and it feels like ${body.current.feelslike}. And the humidity is ${body.current.humidity}%.`);
     }
   });
 };
