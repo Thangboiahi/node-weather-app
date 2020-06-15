@@ -50,6 +50,10 @@ header a {
   text-decoration: none;
 }
 
+header a:hover {
+  color: #222222;
+}
+
 .potrait {
   width: 250px;
 }
@@ -70,4 +74,23 @@ button {
 button:focus,
 input:focus {
   outline: none;
+}
+
+#message {
+  height: 50px;
+  padding: 3px 5px;
+  border: 1px solid #888888;
+  color: #888888;
+}
+
+#map {
+  align-self: flex-end;
+  height: 500px;
+  border: 1px solid #888888;
+  border-radius: 30px;
+
+  text-align: center;
+  color: #888888;
+  line-height: 500px;
+
 }

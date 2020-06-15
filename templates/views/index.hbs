@@ -7,6 +7,8 @@
 
   <link rel="icon" href="/img/weather.png">
   <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDY1Q_m4xHimx3yIWro6HcUX64u0YD7V_k"
+  async defer></script>
   <script src="/js/app.js" defer></script>
 </head>
 <body>
@@ -19,7 +21,10 @@
       <button type="submit">Search</button>
     </form>
 
-    <p id="message"></p>
+    <p id="message">The forecast will appear here...</p>
+    <div id="map">
+      Google Map
+    </div>
 
   </div>
   {{>footer}}

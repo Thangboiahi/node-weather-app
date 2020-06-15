@@ -32,7 +32,7 @@ app.get("/about", (req, res) => {
   res.render("about", {
     title: "About",
     name: "DD",
-    message: "This is a project from a Node js course in Udemy"
+    message: "Weather forecasting app :)"
   });
 });
 
@@ -64,7 +64,11 @@ app.get("/weather", (req, res) => {
       res.send({
         forecast: forecastData,
         location,
-        address: req.query.address
+        address: req.query.address,
+        coordinates: {
+          lat: latitude,
+          lng: longitude
+        }
       })
     })
   })
